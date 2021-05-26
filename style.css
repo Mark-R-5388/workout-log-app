@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  font-family: 'Mate SC', serif;
+  letter-spacing: 4px;
+  font-weight: 200;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 185, 191, 1) 0%,
+    rgba(61, 138, 255, 1) 50%,
+    rgba(0, 11, 254, 1) 100%
+  );
+}
+
+.background-div {
+  min-height: 235px;
+  border: 1px solid white;
+  box-shadow: 8px 5.5px 32px 12.5px #dbd9d9;
+  margin-bottom: 40px;
+}
+
+.flex-container-1 {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.flex-1_1 {
+  margin: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-1_2 {
+  margin: 5px;
+  flex-grow: 2;
+  flex-shrink: 3;
+}
+
+.flex-container-2 {
+  font-size: 20px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+.btn-flex {
+  margin: 5px;
+  font-size: 20px;
+  border: 2px solid rgb(250, 248, 248);
+  border-radius: 5px;
+  background-color: rgb(172, 169, 169);
+  color: whitesmoke;
+}
+
+.btn-flex:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.flex-2_1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-2_2 {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-2_3 {
+  flex-grow: 3;
+  flex-shrink: 5;
+}
+
+.flex-2_3 label {
+  font-size: 24px;
+}
+
+.btn-flex {
+  padding: 5px 10px;
+}
+
+@media (min-width: 600px) {
+  .flex-1_1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 601px) {
+  .flex-1_1 {
+    font-size: 4rem;
+  }
+}
+
+.workout-log {
+  margin-top: 100px;
+  padding: 20px;
+  line-height: 2.25;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    circle,
+    rgba(237, 235, 235, 1) 0%,
+    rgba(200, 200, 200, 1) 100%
+  );
+}
+
+.workout-log:empty {
+  display: none;
+}
+
+.workout-log h2 {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+  font-size: 60px;
+}
+.workout-log button {
+  padding: 5px 12px;
+  font-size: 20px;
+  margin: auto;
+}
+
+.workout-log a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/* Edit Page CSS */
+
+.flex-form {
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content-outer {
+  text-align: center;
+}
+
+.flex-form button {
+  margin: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(250, 248, 248);
+  border-radius: 5px;
+  background-color: rgb(172, 169, 169);
+  color: whitesmoke;
+}
+
+.flex-form button:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.content-outer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-outer button {
+  margin: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(250, 248, 248);
+  border-radius: 5px;
+  background-color: rgb(172, 169, 169);
+  color: whitesmoke;
+}
+
+.content-outer button:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.content-outer a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.content-outer a:hover {
+  color: purple;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+}
